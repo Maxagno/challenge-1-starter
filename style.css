@@ -1,3 +1,58 @@
 body {
 	background-color: hsl(233, 47%, 7%);
+	font-size: 15px;
 }
+
+.card {
+	display:flex;
+	background-color: hsl(244, 38%, 16%);
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.attribution {
+	align-self:center;
+	position:bottom;
+
+}
+
+@font-face {
+	font-family:Inter;
+	src:url(images/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+	font-family:Lexend Deca;
+	src:url(images/Lexend_Deca/LexendDeca-Regular.ttf);
+}
+
+.left_part_card {
+	font-family: Lexend Deca, sans, monospace;
+	font-weight: 400;
+}
+
+.header_card {
+	display:inline-table;
+	color:hsl(0, 0%, 100%);
+	font-family: Inter;
+	font-weight: 700;
+}
+
+#important_text {
+	color: hsl(277, 64%, 61%);
+}
+
+.text_notImportant {
+	color: hsla(0, 0%, 100%, 0.6);
+}
+
+.text_Number {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.footer_card {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+

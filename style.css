@@ -13,47 +13,56 @@ body {
 }
 .container {
 	display: grid;
-	grid-template-columns: 40px 50px auto 50px 40px;
-  	grid-template-rows: 5% 10px auto;
+	grid-auto-flow: row;
+  	justify-content: center;
+  	align-items: center;
+  	position: relative;
 	font-size: 15px;
 }
 
 .card {
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: row1-start;
-	grid-row-end: 3;
 	background-color: hsl(244, 38%, 16%);
 }
 
 .card_container {
 	display: grid;
-	grid-template-columns:  50% 50%;
+  	grid-template-columns: 50% 50%;
+  	text-align: center;
 	justify-content: center;
 }
 
 .left_part_card {
-	grid-column-start: 1;
-	grid-column-end: 1;
+	grid-column: 1;
 	font-family: Lexend Deca;
 	font-weight: 400;
-	display: flex;
-	flex-direction: column;
 }
 
 .right_part_card {
-	grid-column-start: 2;
-	grid-column-end: 2;
-	background-size: cover;
+	grid-column: 2;
 }
 
 .header_card {
+	grid-row: inherit;
 	color:hsl(0, 0%, 100%);
 	font-family: Inter;
 	font-weight: 700;
+	display: flex;
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 2em;
+}
+
+.text_card {
+	grid-row: inherit;
+	display: flex;
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .footer_card {
+	grid-row: inherit;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -74,7 +83,6 @@ body {
 	color:hsl(0, 0%, 100%);
 	font-family: Inter;
 	font-weight: 700;
-	/*color: hsla(0, 0%, 100%, 0.75); */
 }
 
 

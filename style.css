@@ -39,6 +39,9 @@ body {
 
 .right_part_card {
 	grid-column: 2;
+	background: url(images/image-header-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .header_card {

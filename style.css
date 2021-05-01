@@ -42,6 +42,7 @@ body {
 	background: url(images/image-header-desktop.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	filter:sepia(100%) hue-rotate(220deg) saturate(300%);
 }
 
 .header_card {

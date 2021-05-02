@@ -13,7 +13,7 @@ body {
 }
 .container {
 	display: grid;
-	grid-template-columns: 15% 70% 15%;
+	grid-template-columns: 10% 80% 10%;
   	justify-content: center;
   	align-items: center;
   	position: relative;
@@ -60,7 +60,7 @@ body {
 	text-align: justify;
 	margin-left: 10%;
 	margin-right: 10%;
-	font-size: 1.8vw;
+	font-size: 2.3vw;
 }
 
 .text_card {
@@ -69,7 +69,7 @@ body {
 	text-align: justify;
 	margin-left: 10%;
 	margin-right: 10%;
-	font-size: 1vw;
+	font-size: 1.3vw;
 }
 
 .footer_card {
@@ -78,7 +78,7 @@ body {
 	flex-direction: row;
 	justify-content: space-around;
 	text-transform: uppercase;
-	font-size: 1vw;
+	font-size: 1.3vw;
 }
 
 #important_text {
@@ -95,7 +95,90 @@ body {
 	color:hsl(0, 0%, 100%);
 	font-family: Inter;
 	font-weight: 700;
-	font-size: 1.3vw;
+	font-size: 1.8vw;
 }
 
+@media (max-width: 450px) {
+	.container {
+		display: grid;
+		grid-template-columns: 5% 80% 5%;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		font-size: 15px;
+	}	
 
+	.card {
+		margin-top: 5%;
+		grid-column: 2;
+		height: 40vw;
+		background-color: hsl(244, 38%, 16%);
+	}
+
+	.card_container {
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+		justify-content: center;
+		background-color: hsl(244, 38%, 16%);
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	.left_part_card {
+		font-family: Lexend Deca;
+		font-weight: 400;
+		height: 100%;
+	}
+
+	.right_part_card {
+		grid-row: 1;
+		grid-column: 1;
+		height: 20vw;
+		min-height: 45vw;
+		background: url(images/image-header-desktop.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+		border-bottom-right-radius: 0;
+		filter:sepia(100%) hue-rotate(220deg) saturate(300%);
+	}
+
+	.header_card {
+		grid-row: inherit;
+		color:hsl(0, 0%, 100%);
+		font-family: Inter;
+		font-weight: 700;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: justify;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 4vw;
+	}
+
+	.text_card {
+		text-align: justify;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 2.5vw;
+	}
+
+	.footer_card {
+		grid-row: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		text-transform: uppercase;
+		font-size: 2.5vw;
+	}
+	
+	.text_Number {
+		font-size: 4vw;
+	}
+}

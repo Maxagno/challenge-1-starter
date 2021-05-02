@@ -152,7 +152,7 @@ body {
 		grid-column: 1;
 		height: 20vw;
 		min-height: 45vw;
-		background: url(images/image-header-desktop.jpg);
+		background: url(images/image-header-mobile.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-top-right-radius: 15px;
